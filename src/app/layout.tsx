@@ -3,13 +3,13 @@ import { Kalam, Comic_Neue } from 'next/font/google';
 import './globals.css';
 
 const kalam = Kalam({
-  variable: '--font-kalam',
+  variable: '--font-user',
   subsets: ['latin'],
   weight: ['300', '400', '700'],
 });
 
 const comicNeue = Comic_Neue({
-  variable: '--font-comic-neue',
+  variable: '--font-system',
   subsets: ['latin'],
   weight: ['300', '400', '700'],
 });

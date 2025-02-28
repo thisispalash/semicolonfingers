@@ -27,6 +27,6 @@ body {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
 
-  --font-user: var(--font-kalam);
-  --font-system: var(--font-comic-neue);
+  --font-user: var(--font-user);
+  --font-system: var(--font-system);
 }
