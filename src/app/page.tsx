@@ -2,10 +2,16 @@
 
 import clsx from 'clsx';
 import Image from 'next/image';
+import { useState } from 'react';
 
 import Link from '@/component/Link';
+import SignupModal from '@/component/SignupModal';
 
 export default function Home() {
+
+  const [ isOpen, setIsOpen ] = useState(false);
+  const [ clicker, setClicker ] = useState('');
+
   return (
     <main 
       className={clsx(
@@ -52,9 +58,11 @@ export default function Home() {
 
       {/* Footer */}
       <div className="hidden md:flex flex-row gap-20 items-center justify-center">
-        <Link href="https://emptyyourmug.com"><span className="text-lg">emptyyourmug</span></Link>
-        <Link href="https://pullmythread.com"><span className="text-lg">pullmythread</span></Link>
+        <Link href="#" onClick={() => { setClicker('emptyyourmug'); setIsOpen(true); }}><span className="text-lg">emptyyourmug</span></Link>
+        <Link href="#" onClick={() => { setClicker('pullmythread'); setIsOpen(true); }}><span className="text-lg">pullmythread</span></Link>
       </div>
+
+      <SignupModal isOpen={isOpen} onClose={() => setIsOpen(false)} src={clicker} />
 
     </main>
   );
