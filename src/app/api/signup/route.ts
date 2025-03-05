@@ -7,7 +7,7 @@ export async function POST(request: NextRequest) {
   console.log(email, name, interested_in);
 
   const { error } = await supabaseAdmin
-    .from('signup')
+    .from('semicolon_interest')
     .insert({ email, name, interested_in });
   
   if (error) {
