@@ -10,25 +10,3 @@ export const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
 // Client for server-side operations (protected)
 export const supabaseAdmin = createClient(supabaseUrl, supabaseServiceKey);
-
-// User signup function
-export async function signUpUser(email: string, name: string, interested_in: number) {
-  try {
-
-
-    const { error } = await supabaseAdmin
-      .from('signup')
-      .insert({
-        email,
-        name,
-        interested_in
-      });
-
-    if (error) throw error;
-
-    return { success: true, error: undefined };
-  } catch (error) {
-    console.error('Error signing up user:', error);
-    return { success: false, error };
-  }
-}
