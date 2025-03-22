@@ -73,7 +73,7 @@ const SignupModal: React.FC<SignupModalProps> = ({ isOpen, onClose, src, display
 
           {displayHelp && (
             <p className="font-system text-sm md:text-base text-foreground">
-              Public release for semicolon fingers is coming in two weeks. Enter your details below to get notified when it&apos;s live!
+              Public release for semicolon fingers is coming in April 2025. Enter your details below to get notified when it&apos;s live!
             </p>
           )}
           
@@ -180,31 +180,6 @@ const SignupModal: React.FC<SignupModalProps> = ({ isOpen, onClose, src, display
       )}
 
     </BaseModal>
-
-
-    
-    // <>
-    //   {/* Overlay */}
-    //   <div 
-    //     className="fixed inset-0 bg-foreground/80 z-40"
-    //     onClick={onClose}
-    //   ></div>
-      
-    //   {/* Modal */}
-    //   <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-background rounded-lg shadow-lg z-50 w-[90%] max-w-md">
-    //     <div className="relative p-6 bg-background flex flex-col gap-6 items-center justify-center rounded-lg">
-    //       {/* Close button */}
-    //       <button 
-    //         className="absolute top-3 right-3 text-4xl font-system cursor-pointer hover:font-user hover:text-foreground/50 transition-colors"
-    //         onClick={onClose}
-    //       >
-    //         &times;
-    //       </button>
-
-          
-    //     </div>
-    //   </div>
-    // </>
   );
 };
 
