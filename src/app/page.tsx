@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 
 import Link from '@/component/primitive/Link';
-import SignupModal from '@/component/SignupModal';
+import SignupModal from '@/component/modal/SignupModal';
 
 export default function Home() {
 
