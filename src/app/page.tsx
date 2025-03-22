@@ -28,8 +28,8 @@ export default function Home() {
         'bg-background/90',
       )}>
 
-        <Link href="https://pullmythread.com">
-          pullmythread
+        <Link href="#" onClick={() => { setClicker('pullmythread'); setIsOpen(true); }}>
+          <span className="text-base">pullmythread</span>
         </Link>
 
         <div className="flex flex-col gap-2 items-center justify-center">
@@ -37,8 +37,8 @@ export default function Home() {
           <p className="font-user text-lg text-center">Addressing the loneliness epidemic in the world..</p>
         </div>
 
-        <Link href="https://emptyyourmug.com">
-          emptyyourmug
+        <Link href="#" onClick={() => { setClicker('emptyyourmug'); setIsOpen(true); }}>
+          <span className="text-base">emptyyourmug</span>
         </Link>
         
       </div>
