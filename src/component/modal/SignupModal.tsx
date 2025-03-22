@@ -66,18 +66,16 @@ const SignupModal: React.FC<SignupModalProps> = ({ isOpen, onClose, src, display
   if (!isOpen) return null;
 
   return (
-    <BaseModal isOpen={isOpen} onClose={onClose} title="Sign up">
+    <BaseModal isOpen={isOpen} onClose={onClose} title="Access coming!">
       {!error && !success &&
-        <>
-          <div className="w-full flex flex-col gap-2 items-center justify-center">
-            <h2 className="w-full text-left text-xl font-system mb-4 text-foreground">Access coming!</h2>
+        <div className="w-full flex flex-col gap-2 items-center justify-center">
+          {/* <h2 className="w-full text-left text-xl font-system mb-4 text-foreground">Access coming!</h2> */}
 
-            {displayHelp && (
-              <p className="font-system text-sm md:text-base text-foreground">
-                Public release for semicolon fingers is coming in two weeks. Enter your details below to get notified when it&apos;s live!
-              </p>
-            )}
-          </div>
+          {displayHelp && (
+            <p className="font-system text-sm md:text-base text-foreground">
+              Public release for semicolon fingers is coming in two weeks. Enter your details below to get notified when it&apos;s live!
+            </p>
+          )}
           
           <form onSubmit={handleSubmit} className="w-full flex flex-col gap-6 items-center justify-center">
             {/* Name field */}
@@ -160,7 +158,8 @@ const SignupModal: React.FC<SignupModalProps> = ({ isOpen, onClose, src, display
               {isLoading ? 'Submitting...' : 'Let me know!'}
             </button>
           </form>
-        </>
+        
+        </div>
       }
 
       {success && (

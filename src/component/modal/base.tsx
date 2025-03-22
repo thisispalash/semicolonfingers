@@ -25,7 +25,7 @@ export default function BaseModal({ isOpen, onClose, children, title }: BaseModa
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex justify-between items-center mb-6">
-          {title && <h2 className="text-2xl">{title}</h2>}
+          {title && <h2 className="text-xl font-system">{title}</h2>}
 
           {/* Close button */}
           <button 
