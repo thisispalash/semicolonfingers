@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import clsx from 'clsx';
 
-
-import Link from '@/component/Link';
+import Link from '@/component/primitive/Link';
 
 interface SignupModalProps {
   isOpen: boolean;
