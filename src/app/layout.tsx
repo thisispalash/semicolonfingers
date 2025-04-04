@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import { Kalam, Comic_Neue } from 'next/font/google';
 import './globals.css';
 
+import Script from 'next/script';
+
 const kalam = Kalam({
   variable: '--font-user',
   subsets: ['latin'],
@@ -26,6 +28,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Script 
+        async 
+        src="/js/goat.js" 
+        data-goatcounter="https://smf.goatcounter.com/count" 
+      />
       <link rel="icon" href="/arms-400.png" />
       <body
         className={`
